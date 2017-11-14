@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
+import FontAwesome from 'react-fontawesome';
 import logo from './logo.png';
 
 class STNavBar extends Component {
@@ -9,29 +10,35 @@ class STNavBar extends Component {
         <Navbar.Header>
           <Navbar.Brand>
             {/* <img src={logo}/> */}
+            <FontAwesome
+              name="music"
+              style={{
+                textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)',
+                marginRight: '10px',
+              }}
+            />
             SonicTrends
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>
-        <Navbar.Collapse>
+        {/* <Navbar.Collapse>
           <Nav>
             <NavItem eventKey={1} href="#">Link</NavItem>
             <NavItem eventKey={2} href="#">Link</NavItem>
             <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
-              <MenuItem eventKey={3.1}>Action</MenuItem>
-              <MenuItem eventKey={3.2}>Another action</MenuItem>
-              <MenuItem eventKey={3.3}>Something else here</MenuItem>
-              <MenuItem divider />
-              <MenuItem eventKey={3.3}>Separated link</MenuItem>
+          <MenuItem eventKey={3.1}>Action</MenuItem>
+          <MenuItem eventKey={3.2}>Another action</MenuItem>
+          <MenuItem eventKey={3.3}>Something else here</MenuItem>
+          <MenuItem divider />
+          <MenuItem eventKey={3.3}>Separated link</MenuItem>
             </NavDropdown>
           </Nav>
           <Nav pullRight>
             <NavItem eventKey={1} href="#">Link Right</NavItem>
             <NavItem eventKey={2} href="#">Link Right</NavItem>
           </Nav>
-        </Navbar.Collapse>
+        </Navbar.Collapse> */}
       </Navbar>
-
     );
   }
 }
